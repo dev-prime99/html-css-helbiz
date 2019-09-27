@@ -73,14 +73,29 @@ nav li a{
 .gobike{
   padding: 3% 0;
 }
-
-.gobike .col-lg-6{
-  width: 48%;
+@media screen and (min-width: 1240px) {
+  .bg-panna{
+    background: #fafafa;
+    width: 48%;
+    margin: 1%;
+    float: left;
+  }
 }
 
-.bg-panna{
-  background: #fafafa;
-  margin: 1%;
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .bg-panna{
+    background: #fafafa;
+    width: 48%;
+    margin: 1%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-panna{
+    background: #fafafa;
+    width: 100%;
+  }
 }
 
 .lgprod{
@@ -125,27 +140,57 @@ nav li a{
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 768px) {
   .col_bn{
     width: 25%;
     margin: 0 12.5%;
     padding: 2% 0;
     float: left;
   }
+
   .none{
     display: none;
+    padding-top: 10%;
+  }
+
+  .banner h3{
+  font-size: 26px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .banner .none2{
+  .col_bn{
     display: none;
-
+  }
+  .iphone img{
+    width: 250px;
+    top: 47%;
+  }
+  .container2{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 12%;
+    font-size: 1.3em;
   }
 }
 
+/* SMART MOBILITY */
 
+.sm_img img{
+  width: 100%;
+}
 
-.banner h3{
-  font-size: 26px;
+.bg_grigio{
+  background-color: #252425;
+  background-size: cover;
+}
+
+.bg_grigio h3{
+  font-size: 40px;
+}
+
+.mt{
+  width: 50%;
+  margin: 0 auto;
+  padding: 26.3% 0;
 }
