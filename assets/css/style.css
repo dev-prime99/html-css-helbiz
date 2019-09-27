@@ -100,3 +100,52 @@ nav li a{
 .gobike p{
   padding-bottom: 1%;
 }
+
+/* BANNER */
+
+.banner{
+  position: relative;
+  width: 100%;
+}
+
+.banner_img{
+  background-image: url("../img/HelbizBanner.jpg");
+  height: 350px;
+  background-size: cover;
+}
+
+.banner .container{
+  width: 100%;
+}
+
+.iphone img{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1240px) {
+  .col_bn{
+    width: 25%;
+    margin: 0 12.5%;
+    padding: 2% 0;
+    float: left;
+  }
+  .none{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .none2{
+    display: none;
+
+  }
+}
+
+
+
+.banner h3{
+  font-size: 26px;
+}
