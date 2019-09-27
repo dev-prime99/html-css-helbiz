@@ -135,7 +135,7 @@ nav li a{
 
 .iphone img{
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -176,21 +176,75 @@ nav li a{
 
 /* SMART MOBILITY */
 
-.sm_img img{
-  width: 100%;
-}
-
-.bg_grigio{
-  background-color: #252425;
+.sm_mobility{
+  margin-top: 2%;
+  background-image: url("../img/Helbiz-scooter1.png");
   background-size: cover;
-}
-
-.bg_grigio h3{
-  font-size: 40px;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
 }
 
 .mt{
-  width: 50%;
   margin: 0 auto;
-  padding: 26.3% 0;
+  padding: 25% 0;
+  width: 60%;
+}
+
+.mt h3{
+  font-size: 40px;
+}
+
+/* APP */
+
+.app::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.app_img{
+  background: url(../img/HelbiZAPP.png) bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+}
+
+.app_img h2, .find h2{
+  padding-top: 3%;
+}
+
+.app_img p, .find p{
+  padding: 3% 0;
+}
+
+.find{
+  background-image: url("../img/Cities-1500.jpg");
+  background-size: cover;
+}
+
+/* DEBUG: corregere responsive lettering, link più creare spaziiature tra colonne in desk e ipad; su smartphone distanziare quadri */
+
+@media screen and (min-width: 1240px) {
+  .app_img{
+    background-size: 530px,100%;
+  }
+  .app_img, .find{
+    min-height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .app_img{
+    background-size: 300px, auto;
+  }
+  .app_img, .find{
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .app_img{
+    background-size: 350px, auto;
+  }
+  .app_img, .find{
+    min-height: 400px;
+  }
 }
