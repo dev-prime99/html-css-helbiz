@@ -3,3 +3,72 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container{
+  margin: 0 auto;
+}
+
+.cwh{
+  color: #ffffff;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* HEADER */
+
+header{
+  background-color: #ffffff;
+}
+
+header nav{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+nav img{
+  height: 25px;
+}
+
+nav ul{
+  text-align: right;
+  padding-top: 0.5%;
+}
+
+nav li{
+  display: inline-block;
+  padding: 0 1.5%;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+/* MAIN */
+
+.spot{
+  background-image: url("../img/helbizorig.jpg");
+  background-size: cover, cover;
+  background-position: center;
+}
+
+.spot .col-lg-12{
+  padding: 40% 0;
+}
+
+.spot h2{
+  font-size: 45px;
+}
+
+.spot a img{
+  padding: 2% 1%;
+}
+
+/* GOBIKE */
+
+.bg-panna{
+  background: #fafafa;
+}
