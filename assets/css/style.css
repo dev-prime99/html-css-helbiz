@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .container{
@@ -69,6 +70,33 @@ nav li a{
 
 /* GOBIKE */
 
+.gobike{
+  padding: 3% 0;
+}
+
+.gobike .col-lg-6{
+  width: 48%;
+}
+
 .bg-panna{
   background: #fafafa;
+  margin: 1%;
+}
+
+.lgprod{
+  width: 25%;
+  padding-top: 7%;
+}
+
+.prod{
+  width: 50%;
+}
+
+.gobike h2{
+  padding: 2% 0;
+  font-weight: lighter;
+}
+
+.gobike p{
+  padding-bottom: 1%;
 }
