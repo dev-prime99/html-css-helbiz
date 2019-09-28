@@ -21,6 +21,11 @@
 
 header{
   background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
 }
 
 header nav{
@@ -46,7 +51,34 @@ nav li{
 nav li a{
   text-decoration: none;
   color: #000000;
+  font-size: 11px;
+  font-weight: bold;
 }
+
+.burger{
+  position: absolute;
+  top: 46%;
+  right: 5%;
+  transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 999px) {
+  nav img{
+    height: 35px;
+  }
+  header ul{
+    display: none;
+  }
+  .burger i{
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .burger{
+    display: none;
+  }
+}
+
 
 /* MAIN */
 
@@ -114,6 +146,15 @@ nav li a{
 
 .gobike p{
   padding-bottom: 1%;
+}
+
+.gobike a{
+  color: #0070c8;
+  text-decoration: none;
+}
+
+.gobike a:hover{
+  text-decoration: underline;
 }
 
 /* BANNER */
@@ -187,6 +228,9 @@ nav li a{
   .container2{
     margin: 30% auto 10% auto;
     font-size: 1em;
+  }
+  .none{
+    transform: translate(-50%, -130%);
   }
 }
 
@@ -304,6 +348,10 @@ nav li a{
   }
 }
 
+.app a:hover{
+  text-decoration: underline;
+}
+
 /* FAMILY */
 
 .family{
@@ -418,5 +466,8 @@ footer .ft_bl a{
   }
   .store img{
     width: 30%;
+  }
+  .ft_sc{
+    margin: 15% 0 8% 0;
   }
 }
